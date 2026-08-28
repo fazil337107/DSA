@@ -21,6 +21,9 @@ void merge(int* arr,int s,int e){
     }
     while(a<len1) arr[k++]=first[a++];
     while(b<len2) arr[k++]=second[b++];
+
+    delete []first;
+    delete []second;
     
 }
 void mergesort(int *arr,int s,int e){
